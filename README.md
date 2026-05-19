@@ -9,15 +9,22 @@ Supervised **binary classification** project to predict whether a credit card cl
 
 - `credit_card_default_prediction.ipynb` — full notebook (EDA + feature engineering + modeling + evaluation)
 - `credit_card_default_prediction.py` — runnable script export
-- `data/default of credit card clients.xls` — dataset file (UCI)
+- `data/` — dataset folder (see instructions below)
 
 ## Dataset
 
 - **Name:** Default of Credit Card Clients (Taiwan)
-- **Source:** UCI Machine Learning Repository  
-  https://archive.uci.edu/dataset/350/default+of+credit+card+clients
+- **Source (UCI ML Repository):** https://archive.uci.edu/dataset/350/default+of+credit+card+clients
+- The raw XLS contains a descriptive header row at index 0, followed by the actual column names at index 1. The code uses `header=1`.
 
-The raw XLS contains a descriptive header row at index 0, followed by the actual column names at index 1. The code uses `header=1`.
+### Download the dataset
+
+1) Download the dataset from UCI (link above). 
+2) Place the file here:
+
+- `data/default of credit card clients.xls`
+
+> Note: The dataset file is intentionally **not committed** to this repository.
 
 ## Setup
 
@@ -32,7 +39,7 @@ source .venv/bin/activate
 **Windows (PowerShell)**
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.[0m\.venv\Scripts\Activate.ps1
 ```
 
 ### 2) Install dependencies
